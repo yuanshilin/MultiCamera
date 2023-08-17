@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ArcVideo_Camera</string>
+    <dimen name="button_height">88dp</dimen>
+</resources>

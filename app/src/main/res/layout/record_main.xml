@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.mc_camera.MCCameraRecordSurfaceView
+        android:id="@+id/displayPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/previeSizeShow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预览分辨率："/>
+
+    <TextView
+        android:id="@+id/cameraIdShow"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/previeSizeShow"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相机ID："/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/recordPix"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="录像分辨率"/>
+        <Button
+            android:id="@+id/chooseCamera"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="选择摄像头"/>
+        <Button
+            android:id="@+id/record"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="开始录像"/>
+        <Button
+            android:id="@+id/switchToTakePicture"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="切换到拍照"/>
+    </LinearLayout>
+</RelativeLayout>

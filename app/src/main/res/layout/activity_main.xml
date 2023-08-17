@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.android.mc_camera.MCCameraTakePictureSurfaceView
+        android:id="@+id/McCameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/previeSizeShow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预览分辨率："/>
+
+    <TextView
+        android:id="@+id/pictureSizeShow"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/previeSizeShow"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照分辨率："/>
+
+    <TextView
+        android:id="@+id/cameraIdShow"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pictureSizeShow"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相机ID："/>
+
+    <TextView
+        android:id="@+id/fpsShow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:textSize="20sp"
+        android:paddingRight="50dp"
+        android:text="FPS:0"/>
+
+    <ImageView
+        android:id="@+id/picShow"
+        android:layout_below="@id/fpsShow"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/previewSizeSet"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="预览分辨率"/>
+        <Button
+            android:id="@+id/pictureSizeSet"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="拍照分辨率"/>
+        <Button
+            android:id="@+id/chooseCamera"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="选择摄像头"/>
+        <Button
+            android:id="@+id/takePicture"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="拍照"/>
+        <Button
+            android:id="@+id/switchToRecord"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="切换到录像"/>
+    </LinearLayout>
+</RelativeLayout>
